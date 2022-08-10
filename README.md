@@ -5,6 +5,7 @@
 3. Go to `org settings`(Org Settings Icon next to the top left) --> `Access Manager` --> `Create Api Key` (Find `Create Api Key` tab on top right corner)
 4. You will get `public` and `private key` pair once you create an API Key. These two keys are used for MongoDB Atlas provider authentication.
 5. Signup for [IBM Cloud](https://cloud.ibm.com)
+6. Create an IBM Cloud API Key.[here](https://cloud.ibm.com/iam/apikeys)
 
 
 ### Overview of the template:

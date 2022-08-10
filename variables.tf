@@ -72,6 +72,10 @@ variable "roles" {
 
 ########## __________ V A R I A B L E S __________ ##########
 
+variable "ibm_cloud_api_key" {
+  description = "specify your IBM Cloud API Key"
+}
+
 variable "ibm_cloud_id" {
   description = "specify your IBM Cloud ID/EmailID"
 }
