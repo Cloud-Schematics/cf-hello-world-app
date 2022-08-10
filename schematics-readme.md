@@ -21,7 +21,7 @@ Before you begin, make sure that you setup the MongoDBAtlas
     - Provide your name, organization, email ID, password, and Check the privacy acceptance.
     - Access your email, to verify the MongoDB successful verification.
     - Click **Continue** to view the MongoDB welcome page followed with the following database usage plan page.
-      ![Mongodb create page](../images/mongodbcreate.png){: caption=" " caption-side="center"}
+      ![Mongodb create page](../images/mongodbcreate.png)
 2. Create an organisation. 
     - Click [MongoDB create organization](https://cloud.mongodb.com/v2#/preferences/organizations/create).
     - Click **Create an organisation**.
