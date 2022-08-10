@@ -69,7 +69,6 @@ Before you begin, make sure that you setup the MongoDBAtlas
     | db_username | Provide your database username, for example, `atlasAdmin`.|
     | db_password | Provide your database password.|
     | application_hostname | Provide the application hostname. Access MongoDB Atlas > Get all cluster > cluster0 > copy the primary hostname and port number, for example, `test`.|
-    {: caption="input variables" caption-side="bottom"}
 
     For more information, about the input variable, refer to, [Readme](https://github.com/Cloud-Schematics/cf-hello-world-app/blob/main/README.md){: external} file.
 5. Click **Generate plan** workspace to validate the input variables for the resource and view the success page.
