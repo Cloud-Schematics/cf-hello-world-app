@@ -1,10 +1,7 @@
 
 # Deploying Cloud Foundry using MongoDB cloud services
 
-## Description
-{: #cf-mongodb-desc}
-
-In this tutorial, you will use the template that creates the following:
+In this hands on lab, you will use the Terraform template that creates the following:
 1. A project under Atlas Organisation
 2. MongoDb Cluster in the project
 3. Access list and database users to the MongoDb Cluster
@@ -18,7 +15,6 @@ The resources used in this template are from the Lite plan, where the cost is no
 {: important}
 
 ## Prerequisites
-{: #cf-mongodb-prerequisites}
 
 Before you begin, make sure that you setup the MongoDBAtlas
 1. Signup to [MongoDB Atlass](https://www.mongodb.com/cloud)
@@ -83,7 +79,6 @@ Before you begin, make sure that you setup the MongoDBAtlas
    ![Apply plan success](../images/applyplansuccess.png){: caption=" " caption-side="center"}
 
 ## Verify your deployment
-{: #mongodb-verify}
 
 Verify that the `demo-project` is created in your MongoDB organisationas through Schematics 
 - Log in to [Cloud MongoDB](https://cloud.mongodb.com) with your credentials.
