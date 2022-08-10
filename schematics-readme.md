@@ -21,7 +21,7 @@ Before you begin, make sure that you setup the MongoDBAtlas
     - Provide your name, organization, email ID, password, and Check the privacy acceptance.
     - Access your email, to verify the MongoDB successful verification.
     - Click **Continue** to view the MongoDB welcome page followed with the following database usage plan page.
-      ![Mongodb create page](../images/mongodbcreate.png)
+      ![Mongodb create page](/images/mongodbcreate.png)
 2. Create an organisation. 
     - Click [MongoDB create organization](https://cloud.mongodb.com/v2#/preferences/organizations/create).
     - Click **Create an organisation**.
@@ -72,20 +72,20 @@ Before you begin, make sure that you setup the MongoDBAtlas
 
     For more information, about the input variable, refer to, [Readme](https://github.com/Cloud-Schematics/cf-hello-world-app/blob/main/README.md){: external} file.
 5. Click **Generate plan** workspace to validate the input variables for the resource and view the success page.
-   ![Generate plan success](../images/generateplansuccess.png)
+   ![Generate plan success](/images/generateplansuccess.png)
 6. Click **Apply plan** workspace to provision the resource. Wait 1 - 2 minutes to complete the job execution and view the success page.
-   ![Apply plan success](../images/applyplansuccess.png)
+   ![Apply plan success](/images/applyplansuccess.png)
 
 ## Verify your deployment
 
 Verify that the `demo-project` is created in your MongoDB organisationas through Schematics 
 - Log in to [Cloud MongoDB](https://cloud.mongodb.com) with your credentials.
 - From the left corner select your organization, for example `ibm-testorg` to view the created `demo-project` as shown in the screen capture.
-   ![demo project creation](../images/demo-project.png)
+   ![demo project creation](/images/demo-project.png)
 - Click **Network Access** to view the configured IP address from the Schematics workspace.
-   ![network access confg](../images/networkaccess.png)
+   ![network access confg](/images/networkaccess.png)
 - Click **Database Access** to view the configured DB user from the Schematics workspace.
-   ![network access confg](../images/databaseaccess.png)
+   ![network access confg](/images/databaseaccess.png)
 
 Now, you can connect your `Node.js` application and deploy in your `demo-project`.
 
