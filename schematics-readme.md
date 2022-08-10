@@ -42,8 +42,8 @@ Before you begin, make sure that you setup the MongoDBAtlas
 ## Creating workspace using Mongodb and Cloud Foundry Terraform template 
 {: #mongodb-templates}
 
-1. Log in to your [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/workspaces){: external} account by using your credentials.
-2. Click [**Create workspace +**](https://cloud.ibm.com/schematics/workspaces/create){: external}.
+1. Log in to your [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/workspaces) account by using your credentials.
+2. Click [**Create workspace +**](https://cloud.ibm.com/schematics/workspaces/create).
     - In **Specify Template** section:
         - **GitHub, GitLab or Bitbucket repository URL** - `https://github.com/Cloud-Schematics/cf-hello-world-app/tree/mongoDBAtlas`.
         - **Personal access token** - `<Provide your Git personal access token if the repository is private>`.
@@ -61,16 +61,16 @@ Before you begin, make sure that you setup the MongoDBAtlas
 4. Click **Settings** to edit the following input variables in the workspace. 
     | Name | Value |
     | -- | -- |
-    | mongodbatlas_public_key | Provide the recorded Mongodb public key. |
-    | mongodbatlas_private_key | Provide the recorded Mongodb private key. |
-    | mongodbatlas_org_id | The ID of the organization you want to create the project within. For example `ibm`.|
-    | ibm_cloud_api_key | Specify your IBM Cloud API key. |
-    | ibm_cloud_id | Specify your IBM Cloud ID or email ID. |
-    | db_username | Provide your database username, for example, `atlasAdmin`.|
-    | db_password | Provide your database password.|
-    | application_hostname | Provide the application hostname. Access MongoDB Atlas > Get all cluster > cluster0 > copy the primary hostname and port number, for example, `test`.|
+    | `mongodbatlas_public_key` | Provide the recorded Mongodb public key. |
+    | `mongodbatlas_private_key` | Provide the recorded Mongodb private key. |
+    | `mongodbatlas_org_id` | The ID of the organization you want to create the project within. For example `ibm`.|
+    | `ibm_cloud_api_key` | Specify your IBM Cloud API key. |
+    | `ibm_cloud_id` | Specify your IBM Cloud ID or email ID. |
+    | `db_username` | Provide your database username, for example, `atlasAdmin`.|
+    | `db_password` | Provide your database password.|
+    | `application_hostname` | Provide the application hostname. Access MongoDB Atlas > Get all cluster > cluster0 > copy the primary hostname and port number, for example, `test`.|
 
-    For more information, about the input variable, refer to, [Readme](https://github.com/Cloud-Schematics/cf-hello-world-app/blob/main/README.md){: external} file.
+    For more information, about the input variable, refer to, [Readme](https://github.com/Cloud-Schematics/cf-hello-world-app/blob/main/README.md) file.
 5. Click **Generate plan** workspace to validate the input variables for the resource and view the success page.
    ![Generate plan success](/images/generateplansuccess.png)
 6. Click **Apply plan** workspace to provision the resource. Wait 1 - 2 minutes to complete the job execution and view the success page.
