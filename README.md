@@ -2,7 +2,7 @@
 ## Pre-requisites to work with MongoDBAtlas Template:
 1. Signup to [MongoDB Atlass](https://www.mongodb.com/cloud)
 2. Create an organisation.[here](https://cloud.mongodb.com/v2#/preferences/organizations/create)
-3. Go to `org settings`(Org Settings Icon next to the top left) --> `Access Manager` --> `Create Api Key` (Find `Create Api Key` tab on top right corner)
+3. Go to `org settings`(Org Settings Icon next to the top left) --> `Access Manager` --> `Create Api Key` (Find `Create Api Key` tab on top right corner) --> Select `Organization  Owner` from Organization Permissions drop-down.
 4. You will get `public` and `private key` pair once you create an API Key. These two keys are used for MongoDB Atlas provider authentication.
 5. Signup for [IBM Cloud](https://cloud.ibm.com)
 6. Create an IBM Cloud API Key.[here](https://cloud.ibm.com/iam/apikeys)
@@ -32,6 +32,7 @@ This template creates following:
 | db_password              |string|User's initial password.|NA|
 | auth_database_name              |string|Database against which Atlas authenticates the user.|`admin`|
 | roles              |list(object)|List of user's roles and the databases / collections on which the roles apply.|{ role_name = "atlasAdmin" database_name = "admin" }|
+| ibm_cloud_api_key|string|The IBM Cloud API Key|NA|
 | ibm_cloud_id|string|The IBMID/EmailID associated with your IBM Cloud|NA|
 | ibm_cloud_space|string|The name for CloudFoundry space|dev|
 | ibm_cloud_region|string|The IBM Cloud region where the app is deployed|eu-gb|
