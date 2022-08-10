@@ -72,22 +72,22 @@ Before you begin, make sure that you setup the MongoDBAtlas
 
     For more information, about the input variable, refer to, [Readme](https://github.com/Cloud-Schematics/cf-hello-world-app/blob/main/README.md){: external} file.
 5. Click **Generate plan** workspace to validate the input variables for the resource and view the success page.
-   ![Generate plan success](../images/generateplansuccess.png){: caption=" " caption-side="center"}
+   ![Generate plan success](../images/generateplansuccess.png)
 6. Click **Apply plan** workspace to provision the resource. Wait 1 - 2 minutes to complete the job execution and view the success page.
-   ![Apply plan success](../images/applyplansuccess.png){: caption=" " caption-side="center"}
+   ![Apply plan success](../images/applyplansuccess.png)
 
 ## Verify your deployment
 
 Verify that the `demo-project` is created in your MongoDB organisationas through Schematics 
 - Log in to [Cloud MongoDB](https://cloud.mongodb.com) with your credentials.
 - From the left corner select your organization, for example `ibm-testorg` to view the created `demo-project` as shown in the screen capture.
-   ![demo project creation](../images/demo-project.png){: caption=" " caption-side="center"}
+   ![demo project creation](../images/demo-project.png)
 - Click **Network Access** to view the configured IP address from the Schematics workspace.
-   ![network access confg](../images/networkaccess.png){: caption=" " caption-side="center"}
+   ![network access confg](../images/networkaccess.png)
 - Click **Database Access** to view the configured DB user from the Schematics workspace.
-   ![network access confg](../images/databaseaccess.png){: caption=" " caption-side="center"}
+   ![network access confg](../images/databaseaccess.png)
 
 Now, you can connect your `Node.js` application and deploy in your `demo-project`.
 
-- Select your `demo-project` > databases > Connect > Connect your application.
+- Select your **demo-project** > **databases** > **Connect** > **Connect your application**.
 - Add your connection string in your application code and start updating the data into your project.
