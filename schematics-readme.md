@@ -1,4 +1,3 @@
-
 # Deploying Cloud Foundry using MongoDB cloud services
 
 In this hands on lab, you will use the Terraform template that creates the following:
