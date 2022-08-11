@@ -59,7 +59,10 @@ Use the IBM Cloud Schematics to build and spin up your IBM Cloud environment, au
     - Click `Create`.
 3. On successful creation of `deploying mongodb template in schematics` workspace, as shown in the screen capture. 
    ![create workspace success](/images/createworkspacesuccess.png)
-4. Click **Settings** to edit the following input variables in the workspace. 
+   
+## Configuring input and Analysing the output
+
+1. Click **Settings** to edit the following input variables in the workspace. 
     | Name | Value |
     | -- | -- |
     | `mongodbatlas_public_key` | Provide the recorded Mongodb public key. |
@@ -72,13 +75,13 @@ Use the IBM Cloud Schematics to build and spin up your IBM Cloud environment, au
     | `application_hostname` | Provide the Cloud Foundry application hostname. for example, `test-cfhelloworld-app`.|
 
     For more information, about the input variable, refer to, [Readme](https://github.com/Cloud-Schematics/cf-hello-world-app/blob/main/README.md) file.
-5. Click **Generate plan** workspace to validate the input variables for the resource and view the success page.
+2. Click **Generate plan** workspace to validate the input variables for the resource and view the success page.
    ![Generate plan success](/images/generateplansucccess.png)
-6. Click **Apply plan** workspace to provision the resource. Wait 1 - 2 minutes to complete the job execution and view the success page.
-7. Expand **Apply plan successful** logs > **show more** to view the URL created as shown in the screen capture.
+3. Click **Apply plan** workspace to provision the resource. Wait 1 - 2 minutes to complete the job execution and view the success page.
+4. Expand **Apply plan successful** logs > **show more** to view the URL created as shown in the screen capture.
    ![Application output url](/images/outputurl.png)
-8. Access the URL in the browser to use the deployed application. For example `https://test-b00061797d347d36.eu-gb.cf.appdomain.cloud`
-9. Enter the string `Hello world` or `your name` and click `Enter` to view the data in stored in the database content.
+5. Access the URL in the browser to use the deployed application. For example `https://test-b00061797d347d36.eu-gb.cf.appdomain.cloud`
+6. Enter the string `Hello world` or `your name` and click `Enter` to view the data in stored in the database content.
    ![Access app](/images/accessapp.png)
    
    
