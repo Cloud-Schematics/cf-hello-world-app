@@ -80,7 +80,11 @@ Use the IBM Cloud Schematics to build and spin up your IBM Cloud environment, au
 8. Access the URL in the browser to use the deployed application. For example `https://test-b00061797d347d36.eu-gb.cf.appdomain.cloud`
 9. Enter the string `Hello world` or `your name` and click `Enter` to view the data in stored in the database content.
    ![Access app](/images/accessapp.png)
-10. Optional: You can verify the `demo-project` is created in your MongoDB organizationas through Schematics 
+   
+   
+## Additional Verification
+
+1. Optional: You can verify the `demo-project` is created in your MongoDB organizationas through Schematics 
     - Log in to [Cloud MongoDB](https://cloud.mongodb.com) with your credentials.
     - From the left corner select your organization, for example `ibm-testorg` to view the created `demo-project` as shown in the screen capture.
        ![demo project creation](/images/demo-project.png)
@@ -88,7 +92,7 @@ Use the IBM Cloud Schematics to build and spin up your IBM Cloud environment, au
        ![network access config](/images/networkaccess.png)
     - Click **Database Access** to view the configured DB user from the Schematics workspace.
        ![databaseaccess config](/images/databaseaccess.png)
-11. Optional: You can verify in IBM Cloud account the Cloud Foundry instance is created by
+2. Optional: You can verify in IBM Cloud account the Cloud Foundry instance is created by
     - Click **Resource list** > **Cloud Foundry** > **Public** to view `test-cfhelloworld-app` application is deployed.
  
 ## What's next
