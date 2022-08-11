@@ -73,9 +73,8 @@ Use the IBM Cloud Schematics to build and spin up your IBM Cloud environment, au
 
     For more information, about the input variable, refer to, [Readme](https://github.com/Cloud-Schematics/cf-hello-world-app/blob/main/README.md) file.
 5. Click **Generate plan** workspace to validate the input variables for the resource and view the success page.
-   ![Generate plan success](/images/generateplansuccess.png)
+   ![Generate plan success](/images/generateplansucccess.png)
 6. Click **Apply plan** workspace to provision the resource. Wait 1 - 2 minutes to complete the job execution and view the success page.
-   ![Apply plan success](/images/applyplansuccess.png)
 7. Expand **Apply plan successful** logs > **show more** to view the URL created as shown in the screen capture.
    ![Application output url](/images/outputurl.png)
 8. Access the URL in the browser to use the deployed application. For example `https://test-b00061797d347d36.eu-gb.cf.appdomain.cloud`
