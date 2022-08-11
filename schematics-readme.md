@@ -1,21 +1,21 @@
 # Deploying Cloud Foundry using MongoDB cloud services
 
 In this hands on lab, you will use the Terraform template that creates the following:
-1. A project under Atlas Organisation
-2. MongoDb Cluster in the project
-3. Access list and database users to the MongoDb Cluster
-4. Cloud Foundry organisation and space
-5. Deploys sample HelloWorld App with MongoDb Cluster as backend
+1. A project in [Mongodb Atlas](https://www.mongodb.com/docs/atlas/getting-started/) organisation.
+2. [MongoDb cluster](https://www.mongodb.com/docs/atlas/tutorial/deploy-free-tier-cluster/) in the project.
+3. Access list and database users to the MongoDb cluster.
+4. [Cloud Foundry](https://cloud.ibm.com/docs/cloud-foundry-public?topic=cloud-foundry-public-getting-started) organisation and space.
+5. Deploys sample `HelloWorld App` with MongoDb cluster as backend.
 
-This Terraform sample allows you to deploy a Cloud Foundry app either using Terraform or Schematics on IBM Cloud. You can also learn to use a Terraform template of Cloud Foundry app and deploy by using the {{site.data.keyword.bpshort}} workspace. As part of the tutorial, you will use `ibm_org` and `ibm_space` Cloud Foundry resources and `mongodbatlas_cluster`, `mongodbatlas_project_ip_access_list` MongoDB resources in the Terraform template.
+This Terraform sample allows you to deploy a Cloud Foundry app either using Terraform or Schematics on IBM Cloud. You can also learn to use a Terraform template of Cloud Foundry app and deploy by using the Schematics workspace. As part of the tutorial, you will use `ibm_org` and `ibm_space` Cloud Foundry resources and `mongodbatlas_cluster`, `mongodbatlas_project_ip_access_list` MongoDB resources in the Terraform template.
 {: shortdesc}
 
-The resources used in this template are from the Lite plan, where the cost is not incurred.
+The cost is not incurred for the resources that are used in this template.
 {: important}
 
 ## Prerequisites
 
-Before you begin, make sure that you setup the MongoDBAtlas
+Before you begin, make sure that you setup the MongoDBAtlas:
 1. Signup to [MongoDB Atlass](https://www.mongodb.com/cloud)
     - Click **Try Free**.
     - Provide your name, organization, email ID, password, and Check the privacy acceptance.
@@ -32,15 +32,13 @@ Before you begin, make sure that you setup the MongoDBAtlas
     - Click **Create API Key**.
     - Name **Description** as `ibm-testorgkeys`.
     - Click **Next** to view the Public Key and Private Key of your organization. 
-      Make a note of the public and private keys. These two keys are used for MongoDB Atlas provider authentication.
-      {: note}
-    
+      **Note** Make a note of the public and private keys. These two keys are used for MongoDB Atlas provider authentication.
+       
     - Click **Done**.
 3. Signup from the [IBM Cloud console](https://cloud.ibm.com) with a valid IBM ID. For more information about the sign up process, see [IBM Cloud login](https://cloud.ibm.com/docs/account?topic=account-login-sequence).
 4. Create an [IBM Cloud API Key](https://cloud.ibm.com/iam/apikeys). For more information, about steps to create the API keys, see [Creating an API key](https://cloud.ibm.com/docs/account?topic=account-userapikey&interface=ui#create_user_key).
 
 ## Creating workspace using Mongodb and Cloud Foundry Terraform template 
-{: #mongodb-templates}
 
 1. Log in to your [{{site.data.keyword.cloud_notm}}](https://cloud.ibm.com/workspaces) account by using your credentials.
 2. Click [**Create workspace +**](https://cloud.ibm.com/schematics/workspaces/create).
@@ -66,7 +64,7 @@ Before you begin, make sure that you setup the MongoDBAtlas
     | `mongodbatlas_org_id` | The ID of the organization you want to create the project within. For example `ibm`.|
     | `ibm_cloud_api_key` | Specify your IBM Cloud API key. |
     | `ibm_cloud_id` | Specify your IBM Cloud ID or email ID. |
-    | `db_username` | Provide your database username, for example, `atlasAdmin`.|
+    | `db_username` | Provide your database username, for example, `atlasAdmin`. Click [here](https://www.mongodb.com/docs/atlas/tutorial/create-mongodb-user-for-cluster/) for the detailed steps to create a database user.|
     | `db_password` | Provide your database password.|
     | `application_hostname` | Provide the application hostname. Access MongoDB Atlas > Get all cluster > cluster0 > copy the primary hostname and port number, for example, `test`.|
 
@@ -83,9 +81,9 @@ Verify that the `demo-project` is created in your MongoDB organisationas through
 - From the left corner select your organization, for example `ibm-testorg` to view the created `demo-project` as shown in the screen capture.
    ![demo project creation](/images/demo-project.png)
 - Click **Network Access** to view the configured IP address from the Schematics workspace.
-   ![network access confg](/images/networkaccess.png)
+   ![network access config](/images/networkaccess.png)
 - Click **Database Access** to view the configured DB user from the Schematics workspace.
-   ![network access confg](/images/databaseaccess.png)
+   ![network access config](/images/databaseaccess.png)
 
 Now, you can connect your `Node.js` application and deploy in your `demo-project`.
 
